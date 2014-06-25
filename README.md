@@ -37,7 +37,9 @@ g.css is a fully customisable, minimalistic - css grid system. It's supported in
 ```
 As the column class uses the CSS [attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) for reference, it's imperative that you place it at the start of the class attribute definition.
 ```html
-<div class="x8 a-class another-class"><!--content--></div>
+<div class="x8 a-class another-class">
+	<!--content-->
+</div>
 ```
 This would also mean that you can't start with a non g.css bound class beginning with that letter (or letters), so in this case `class="xylophone x8"` would not work either.
 
@@ -62,34 +64,34 @@ Simply switch around the `g` and `r` classes in your markup and apply the backgr
 ## Customisation
 
 ### Container width
-The default container width it set to 960px. This can be altered to fit your requirements, removing it entirely will set the container to a full width layout.
+The default container width it set to `960px`. This can be altered to fit your requirements, removing it entirely will set the container to a full width layout.
 ```css
 .g {
 	width: 1024px
 }
 ```
-To prevent the jumping of the container from desktop size to tablet (if the above is altered), you will need to adjust the first `@media` query. You will need to make the break point exactly however many %s you have set for the columns higher than the `.g` width. So with the example above:
+To prevent the jumping of the container from desktop size to tablet (if the above is altered), you will need to adjust the first `@media` query. You will need to make the break point exactly however many `%`s you have set for the columns higher than the `.g` width. So with the example above:
 ```css
 [class^='x'] {
-    margin: 0 1%    /* 2% total */
+    margin: 0 1%  /* 2% total */
 }
-@media(max-width: 1044px) {     /* 2% more than 1024px (rounded) */
+@media(max-width: 1044px) {  /* 2% more than 1024px (rounded) */
     .g {
         width: 98%
     }
 }
 ```
 ### Column width
-You can also adjust the column width declarations to allow for a different . Firstly divide the container width by the column per row. Then work out the percentage this value has of the container width. Then take of the desired column margin.
+You can also adjust the column width declarations to allow for different column widths. Firstly divide the container width by the column per row. Then work out the percentage this value has of the container width. Then take off the desired column margin.
 ```css
 .g {
 	width: 960px
 }
 [class^='x'] {
-    margin: 0 1%    /* 2% total */
+    margin: 0 1%  /* 2% total */
 }
 .x5 {
-    width: 98%    /* 960 / 1 = 960 , ((960 / 960) * 100) - 2 = 98 */
+    width: 98%  /* 960 / 1 = 960 , ((960 / 960) * 100) - 2 = 98 */
 }
 .x4 {
     width: 48%
@@ -115,6 +117,7 @@ This can be changed to anything you want, but you would need to bear in mind the
 	width: 89.66666667%
 }
 /* ...and so on... */
+
 @media(max-width: 767px) {
     [class^='example'] {
         width: 98%
