@@ -70,7 +70,7 @@ The default container width it set to `960px`. This can be altered to fit your r
 	width: 1024px
 }
 ```
-To prevent the jumping of the container from desktop size to tablet (if the above is altered), you will need to adjust the first `@media` query. You will need to make the break point exactly however many `%`s you have set for the columns higher than the `.g` width. So with the example above:
+To prevent the jumping of the container from desktop size to tablet (if the above is altered), you will need to adjust the first `@media` query. To do this you must adjust the break point exactly however many `%`s you have set for the columns higher than the `.g` width. So with the example above:
 ```css
 [class^='x'] {
     margin: 0 1%  /* 2% total */
@@ -82,7 +82,7 @@ To prevent the jumping of the container from desktop size to tablet (if the abov
 }
 ```
 ### Column width
-You can also adjust the column width declarations to allow for different column widths. Firstly divide the container width by the column per row. Then work out the percentage this value has of the container width. Then take off the desired column margin. For an example - 5 column grid:
+You can also adjust the column width declarations to allow for different sized column widths. Firstly divide the container width by the column(s) per row. Then work out the percentage this value has of the container width. Finally take off the desired column margin. For an example - 5 column grid:
 ```css
 .g {
 	width: 960px
@@ -125,18 +125,18 @@ This can be changed to anything you want, but you would need to bear in mind the
 }
 ```
 ## Do's
-* **Customise** - It was designed to be bare-bones allowing for as much customisation as possible. So please, tear it up as best as you can!
+* **Customise** - It was designed to be bare-bones, allowing for as much customisation as possible. So please, tear it up as best as you can!
 * **Contribute** - I'm always open to suggestions for improvement.
 * **Share** - Please help this project get noticed.
 
 ## Dont's
-* **Class declaration** - As noted above, make sure whatever you name the column class, is that it's defined first in the attribute.
+* **Class declaration** - As noted above, please make sure that whatever you name the column class, is that it's defined first within the class attribute.
 * **Plagiarize** - I'm happy for this to be used at your hearts content, but please do give credit where it's due and point people in this direction if they are interested in finding out more.
 
 ## FAQs
-* **Please add more?** - There are other related projects in the pipeline, ultimately however I wanted this to be as minuscule as possible. So in the future this repository will be aimed towards less than more.
-* **Add LESS and/or SASS configurations?** - To be honest I'm still sitting on the fence about this. I'm not the biggest advocate of CSS preprocessors and it's not (at present) the direction I want to take. However if there is support for these types of features to be added I will certainly take them into consideration.
-* **Why use `x` as a class name?** - In order to create a minimal system, I only wanted to use one letter for the class reference. So in order to work with the attribute selecter `x` was chosen as it appears the fewest amount times at the start of word in the english language, than any other letter.
+* **Please add more?** - There are other related projects in the pipeline, ultimately however I wanted this to be as minuscule as possible. So in the future this repository will be aimed towards less  rather than more.
+* **Add LESS and/or SASS configurations?** - To be honest I'm still sitting on the fence about this. I'm not the biggest advocate of CSS preprocessors and it's not (at present) the direction I want to take. However if there is support for these types of features to be added, I will certainly take them into consideration.
+* **Why use `x` as a class name?** - In order to create a minimalistic system, I only wanted to use one letter for the class reference. So for this to work with the attribute selecter `x` was chosen as it appears the fewest amount times at the start of all words in the english language.
 * **Please give older versions of IE support?** - The web has moved on and there is no intention for this project to support old versions of IE.
 
 ## Implementations
