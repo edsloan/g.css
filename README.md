@@ -23,9 +23,15 @@ g.css is a fully customisable, minimalistic - css grid system. It's supported in
 ```html
 <div class="g">
 	<div class="r">
-		<div class="x4"><!--Content--></div>
-		<div class="x4"><!--Content--></div>
-		<div class="x4"><!--Content--></div>
+		<div class="x4">
+			<!--Content-->
+		</div>
+		<div class="x4">
+			<!--Content-->
+		</div>
+		<div class="x4">
+			<!--Content-->
+		</div>
 	</div>
 </div>
 ```
@@ -37,11 +43,13 @@ This would also mean that you can't start with a non g.css bound class beginning
 
 **Full width background**
 
-Simply switch around the `g` and `r` classes in your markup and apply the background to the `r` selector.
+Simply switch around the `g` and `r` classes in your markup and apply the background to the element holding the `r` class.
 ```html
 <div class="r bg">
 	<div class="g">
-		<div class="x12"><!--Content--></div>
+		<div class="x12">
+			<!--Content-->
+		</div>
 	</div>
 </div>
 ```
@@ -125,11 +133,11 @@ This can be changed to anything you want, but you would need to bear in mind the
 ## FAQs
 * **Please add more?** - There are other related projects in the pipeline, ultimately however I wanted this to be as minuscule as possible. So in the future this repository will be aimed towards less than more.
 * **Add LESS and/or SASS configurations?** - To be honest I'm still sitting on the fence about this. I'm not the biggest advocate of CSS preprocessors and it's not (at present) the direction I want to take. However if there is support for these types of features to be added I will certainly take them into consideration.
-* **Why use 'x' as a class name?** - In order to create a minimal system, I only wanted to use one letter for the class reference. So in order to work with the attribute selecter `x` was chosen as it appears the fewest amount times at the start of word in the english language, than any other letter.
+* **Why use `x` as a class name?** - In order to create a minimal system, I only wanted to use one letter for the class reference. So in order to work with the attribute selecter `x` was chosen as it appears the fewest amount times at the start of word in the english language, than any other letter.
 * **Please give older versions of IE support?** - The web has moved on and there is no intention for this project to support old versions of IE.
 
 ## Implementations
 * Get your site/project listed here.
 
 ## Author
-[Ed Sloan](http://www.twitter/edsloandev)
+[Ed Sloan](https://twitter.com/edsloandev)
