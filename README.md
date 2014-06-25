@@ -82,7 +82,7 @@ To prevent the jumping of the container from desktop size to tablet (if the abov
 }
 ```
 ### Column width
-You can also adjust the column width declarations to allow for different column widths. Firstly divide the container width by the column per row. Then work out the percentage this value has of the container width. Then take off the desired column margin.
+You can also adjust the column width declarations to allow for different column widths. Firstly divide the container width by the column per row. Then work out the percentage this value has of the container width. Then take off the desired column margin. For an example - 5 column grid:
 ```css
 .g {
 	width: 960px
