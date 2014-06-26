@@ -4,33 +4,13 @@
 * MIT license
 * http://www.opensource.org/licenses/mit-license.php
 */
-
-/* Feel free to delete the comments below */
-
-/*
-* CONTAINER
-* You can set the container width to your desired amount, even remove it.
-* The `margin: 0 auto;` will make sure it's centered.
-*/
 .g {
     width: 960px;
     margin: 0 auto
 }
-/*
-* ROW
-* `overflow; hidden` is used to clear each row in order to maintain it's height.
-*/
 .r {
     overflow: hidden
 }
-/*
-* COLUMNS
-* We use the attribute selector, to select every class starting with a `x`.
-* `float: left;` so it will allow the columns to be side by side.
-* Give a `margin: 0 1%;` to each of the columns to provide a gutter either side.
-* Use the `box-sizing` property to allow for any future padding to not adjust-
-* the % widths.
-*/
 [class^='x'] {
     float: left;
     margin: 0 1%;
@@ -38,12 +18,6 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box
 }
-/*
-* GRID
-* This can be altered to fit your required column widths. To do this calculate:
-* Container width / Columns per row
-* (The resulting amount / Container width * 100) - Total column left & right margin.
-*/
 .x12 {
     width: 98% 
 }
@@ -80,14 +54,6 @@
 .x1 {
     width: 6.333333333%
 }
-/*
-* BREAKPOINTS
-* The first adjusts the container when the original width plus the-
-* column margins is met - to maintain the side margin gutter.
-* It is set to 2% higher (total left/right column margin) than-
-* the original container width.
-* The second fires to set all columns to full width.
-*/
 @media(max-width: 979px) {
     .g {
         width: 98%
