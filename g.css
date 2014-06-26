@@ -54,7 +54,7 @@
 .x1 {
     width: 6.333333333%
 }
-@media(max-width: 979px) {
+@media(max-width: 1024px) {
     .g {
         width: 98%
     }
