@@ -168,8 +168,4 @@ Again this is open to interpretation. The default setting is to maintain the gri
 * Get your site/project listed here.
 
 ## Author
-<<<<<<< HEAD
 [@edsloan](https://twitter.com/edsloandev)
-=======
-[@edsloan](https://twitter.com/edsloandev)
->>>>>>> develop
