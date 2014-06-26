@@ -79,19 +79,6 @@ The default container width it set to `960px`. This can be altered to fit your r
 	width: 1024px
 }
 ```
-To prevent the jumping of the container from desktop size to tablet (if the above is altered), you will need to adjust the first `@media` query. To do this you must adjust the break point to exactly however many `%`s you have set for the columns higher than the `.g` width. So with the example above:
-```css
-[class^='x'] {
-    margin: 0 1%  /* 2% total */
-}
-```
-```css
-@media(max-width: 1044px) {  /* 2% more than 1024px (rounded) */
-    .g {
-        width: 98%
-    }
-}
-```
 ### Column width
 You can also adjust the column width declarations to allow for different sized column widths. Firstly divide the container width by the column(s) per row. Then work out the percentage this value has of the container width. Finally take off the desired column margin. For an example - 5 column grid:
 ```css
