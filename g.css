@@ -82,8 +82,8 @@
 }
 /*
 * BREAKPOINTS
-* The first adjusts the container when original width plus the-
-* column margins is met, to maintain the side margin gutter.
+* The first adjusts the container when the original width plus the-
+* column margins is met - to maintain the side margin gutter.
 * It is set to 2% higher (total left/right column margin) than-
 * the original container width.
 * The second fires to set all columns to full width.
