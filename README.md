@@ -54,7 +54,7 @@ It's worth noting that the column class uses the CSS [attribute selector](https:
 </div>
 ```
 
-**Full width background**
+#### Full width background
 
 Simply switch around the `g` and `r` classes in your markup and apply the background to the element holding the `r` class.
 ```html
