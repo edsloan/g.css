@@ -1,9 +1,4 @@
-/*
-* g.css - A minimalistic, 492 byte - responsive css grid system
-* Copyright (c) 2014 Ed Sloan
-* MIT license
-* http://www.opensource.org/licenses/mit-license.php
-*/
+/*! g.css - v1.0 | MIT | @edsloandev */
 .g {
     width: 960px;
     margin: 0 auto
