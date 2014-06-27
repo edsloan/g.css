@@ -4,6 +4,8 @@ v1.0
 
 g.css is a fully customisable, minimalistic - responsive css grid system. It's supported in Chrome, Firefox, Opera, Safari, IE9+ and all mobile browsers.
 
+[Demo](http://edsloan.github.io/g.css)
+
 ## Installation
 
 -   Clone `git clone https://github.com/edsloan/g.css.git`
