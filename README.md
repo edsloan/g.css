@@ -2,7 +2,7 @@
 
 v1.0
 
-g.css is a fully customisable, minimalistic - responsive css grid system. It's supported in Chrome, Firefox, Opera, Safari, IE9+ and all mobile browsers.
+g.css is a fully customizable, minimalistic - responsive css grid system. It's supported in Chrome, Firefox, Opera, Safari, IE9+ and all mobile browsers.
 
 [Demo](http://edsloan.github.io/g.css)
 
@@ -10,7 +10,6 @@ g.css is a fully customisable, minimalistic - responsive css grid system. It's s
 
 -   Clone `git clone https://github.com/edsloan/g.css.git`
 -   [Archived download](https://github.com/edsloan/g.css/archive/master.zip)
-
 
 ## Getting Started
 
@@ -55,8 +54,7 @@ It's worth noting that the column class uses the CSS [attribute selector](https:
 ```
 
 #### Full width background
-
-Simply switch around the `g` and `r` classes in your markup and apply the background to the element holding the `r` class.
+Simply switch around the `g` and `r` classes in your markup and apply the background to the element holding the `r` class. Background images work great also, you can throw in the optional extras of `background-size: cover` to make sure the image will allways fill the full width and `background-position: 50% 50%` to vertically and horizontally center it.
 ```html
 <div class="r bg">
 	<div class="g">
@@ -67,8 +65,15 @@ Simply switch around the `g` and `r` classes in your markup and apply the backgr
 </div>
 ```
 ```css
+/*color*/
 .bg {
 	background: grey
+}
+/*images*/
+.bg {
+	background-image: url('img/src');
+	background-size: cover;  /* don't forget vendor prefixes for older browser versions*/
+	background-position: 50% 50%
 }
 ```
 
@@ -129,13 +134,22 @@ This can be changed to anything you want, but you would need to bear in mind the
     }
 }
 ```
+
 ### Breakpoints
-Again this is open to interpretation. The default setting is to maintain the grid layout down to `768px`, then switch to a 1 column layout below. To modify this you will need to adjust the `max-width` of when the `@media` query fires.
+Again this is open to interpretation. The default setting is to maintain the grid layout down to `768px`, then switch to a 1 column layout below. To modify this you will need to adjust the `max-width` feature of when the `@media` query fires.
 ```css
 @media(max-width: 480px) {
     [class^='x'] {
         width: 98%
     }
+}
+```
+
+### Extras
+* **Images to fit column width and scale** - This can be achieved by giving the desired image(s) a property of `max-width: 100%`.
+```css
+img {
+    max-width: 100%
 }
 ```
 ## Do's
