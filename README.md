@@ -80,7 +80,7 @@ Simply switch around the `g` and `r` classes in your markup and apply the backgr
 ## Customisation
 
 ### Container width
-The default container width it set to `960px`. This can be altered to fit your requirements, removing it entirely will set the container to a full width layout, which works great also.
+The default container width it set to `960px`. This can be altered to fit your requirements, removing it entirely will set the container to a full width layout, which is perfectly fine to do.
 ```css
 .g {
 	width: 1024px
