@@ -115,6 +115,15 @@ You can also adjust the column width declarations to allow for different sized c
     width: 18%  /* 960 / 5 = 192 , ((192 / 960) * 100) - 2 = 18 */
 }
 ```
+It's also the same with adjusting the column widths within the breakpoints. Using the styles above for example, to make an `.x3` span across half of the screen at `480px` and below with a column `margin: 0 1%;`, would be:
+
+```css
+@media(max-width: 480px) {
+    .x3 {
+        width: 48%
+    }
+}
+```
 
 ### Column naming
 This can be changed to anything you want, but you would need to bear in mind the impact this will have on the attribute selector, as highlighted above.
@@ -126,6 +135,15 @@ This can be changed to anything you want, but you would need to bear in mind the
 	width: 89.66666667%
 }
 /* ...and so on... */
+```
+```css
+[class^='example'] {
+    float: left;
+    margin: 0 1%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
 ```
 ```css
 @media(max-width: 767px) {
