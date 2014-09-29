@@ -2,7 +2,9 @@
 
 v1.0
 
-g.css is a simple, lightweight and fully customizable - responsive css grid system. It's supported in Chrome, Firefox, Opera, Safari, IE9+ and all mobile browsers.
+g.css is a simple, lightweight and fully customizable - responsive css grid system. 
+
+It's supported in Chrome, Firefox, Opera, Safari, IE9+ and all mobile browsers.
 
 [Demo](http://edsloan.github.io/g.css)
 
@@ -78,15 +80,15 @@ Simply switch around the `g` and `r` classes in your markup and apply the backgr
 ```
 
 #### Sass
-1. Go to where g.css sits within your project:
+- Go to where g.css sits within your project:
 
-`cd .. your/g.css/directory`
+    `cd .. your/g.css/directory`
 
-2. Run the command to start watching your changes:
+- Run the command to start watching your changes:
 
-`sass --watch sass/g.scss:g.css --style expanded`
+    `sass --watch sass/g.scss:g.css --style expanded`
 
-3. Finally, open the _options.scss partial and follow the instructions if you wish to configure your set-up.
+- Finally, open the _options.scss partial and follow the instructions if you wish to configure your set-up.
 
 ## Customisation
 
