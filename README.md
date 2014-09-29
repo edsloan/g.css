@@ -82,7 +82,7 @@ Simply switch around the `g` and `r` classes in your markup and apply the backgr
 #### Sass
 - Go to where g.css sits within your project:
 
-    `cd .. your/g.css/directory`
+    `cd your/g.css/directory`
 
 - Run the command to start watching your changes:
 
@@ -183,6 +183,8 @@ img {
     max-width: 100%
 }
 ```
+
+* **Legacy IE support** - Include [respond.js](https://github.com/scottjehl/Respond) within your project to allow for min/max  media queries to work in IE7,8.
 
 ## Implementations
 * Get your site/project listed here.
