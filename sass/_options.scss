@@ -1,0 +1,23 @@
+//
+//_options partial - use this to customize your grid.
+//The ONLY file you will need to modify.
+//
+
+//Class names.
+$container-class-name: g;
+$row-class-name: r;
+$column-class-name: x;
+
+//Container width.
+$container-width: 960px;
+
+//The total number of columns within the grid.
+$total-columns: 12;
+
+//The percentage gutter margin to the left and right of each column.
+//NOTE: Recommended to be kept at 1%.
+$column-gutter-margin: 1;
+
+//The screen width at which the breakpoint(s) fire.
+$medium-breakpoint: "(max-width: 1024px)";
+$small-breakpoint: "(max-width: 767px)";

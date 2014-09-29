@@ -1,0 +1,62 @@
+//
+//_grid partial - this forms the layout.
+//It SHOULD NOT need modifying.
+//
+
+//=====Mixins=====//
+//@include box-sizing(border-box);
+@mixin box-sizing($type) {
+          -webkit-box-sizing: $type;
+          -moz-box-sizing: $type;
+     box-sizing: $type;
+}
+
+//=====Variables=====//
+//Total left and right margin.
+$total-column-margin: $column-gutter-margin * 2;
+
+//Percentage margin for both left and right shorthand version.
+$gutter-margin: percentage($column-gutter-margin / 100); 
+
+//Gives a full width - the margins.
+$full-width: 100% - $total-column-margin;
+
+//=====Grid=====//
+//Container definition.
+.#{$container-class-name} {
+	width: $container-width;
+	margin: 0 auto;
+}
+
+//Row definition.
+.#{$row-class-name} {
+	overflow: hidden;
+}
+
+//Class definition.
+[class^='#{$column-class-name}'] {
+    float: left;
+    margin: 0 $gutter-margin;
+    @include box-sizing(border-box);
+}
+
+//Grid formation.
+@for $i from 1 through $total-columns {
+  	.#{$column-class-name}#{$i} { 
+   		width: (100% / $total-columns * $i) - $total-column-margin;
+   	}
+}
+
+//Medium @media query.
+@media #{$medium-breakpoint} {
+    .#{$container-class-name} {
+        width: $full-width;
+    }
+}
+
+//Small @media query.
+@media #{$small-breakpoint} {
+    [class^='#{$column-class-name}'] {
+        width: $full-width;
+    }
+}

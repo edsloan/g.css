@@ -2,7 +2,7 @@
 
 v1.0
 
-g.css is a fully customizable, minimalistic - responsive css grid system. It's supported in Chrome, Firefox, Opera, Safari, IE9+ and all mobile browsers.
+g.css is a simple, lightweight and fully customizable - responsive css grid system. It's supported in Chrome, Firefox, Opera, Safari, IE9+ and all mobile browsers.
 
 [Demo](http://edsloan.github.io/g.css)
 
@@ -19,7 +19,7 @@ g.css is a fully customizable, minimalistic - responsive css grid system. It's s
 	<link rel="stylesheet" href="css/g.css">
 </head>
 ```
-Or if you want to use the minfied file, point the `href` above to `href="css/g.min.css"`.
+Or if you want to use the minified file, point the `href` above to `href="css/g.min.css"`.
 
 #### HTML structure
 ```html
@@ -54,7 +54,7 @@ It's worth noting that the column class uses the CSS [attribute selector](https:
 ```
 
 #### Full width background
-Simply switch around the `g` and `r` classes in your markup and apply the background to the element holding the `r` class. Background images work great also, you can throw in the optional extras of `background-size: cover` to make sure the image will allways fill the full width and `background-position: 50% 50%` to vertically and horizontally center it.
+Simply switch around the `g` and `r` classes in your markup and apply the background to the element holding the `r` class. Background images work great also, you can throw in the optional extras of `background-size: cover` to make sure the image will always fill the full width and `background-position: 50% 50%` to vertically and horizontally center it.
 ```html
 <div class="r bg">
 	<div class="g">
@@ -76,6 +76,17 @@ Simply switch around the `g` and `r` classes in your markup and apply the backgr
 	background-position: 50% 50%
 }
 ```
+
+#### Sass
+1. Go to where g.css sits within your project:
+
+`cd .. your/g.css/directory`
+
+2. Run the command to start watching your changes:
+
+`sass --watch sass/g.scss:g.css --style expanded`
+
+3. Finally, open the _options.scss partial and follow the instructions if you wish to configure your set-up.
 
 ## Customisation
 
@@ -170,20 +181,6 @@ img {
     max-width: 100%
 }
 ```
-## Do's
-* **Customise** - It was designed to be bare-bones, allowing for as much customisation as possible. So please, tear it up as best as you can!
-* **Contribute** - I'm always open to suggestions for improvement.
-* **Share** - Please help this project get noticed, Feel free to fork, star and share this repository.
-
-## Dont's
-* **Class declaration** - As noted above, please make sure that whatever you name the column class, is that it's defined first within the class attribute.
-* **Plagiarize** - I'm happy for this to be used at your hearts content, but please do give credit where it's due and point people in this direction if they are interested in finding out more.
-
-## FAQs
-* **Please add more?** - There are other related projects in the pipeline which will be hosted on other repositories, ultimately however, I wanted this project to be as minuscule as possible. So in the future this repository will be aimed towards less rather than more.
-* **Add LESS and/or SASS configurations?** - To be honest I'm still sitting on the fence about this. I'm not the biggest advocate of CSS preprocessors and it's not (at present) the direction I want to take. However if there is support for these types of features to be added, I will certainly take them into consideration.
-* **Why use `x` as a class name?** - In order to create a minimalistic system, I only wanted to use one letter for the class reference. So for this to work with the attribute selector, `x` was chosen as it appears the fewest amount of times at the start of all words in the english language.
-* **Please give older versions of IE support?** - The web has moved on and there is no intention for this project to support old versions of IE.
 
 ## Implementations
 * Get your site/project listed here.
